@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>order | amazon</title>
+    <style>
+        form {
+            border-collapse: collapse;
+            width: 400px;
+            margin: 30px auto 0;
+            border: 1px solid black;
+            border-radius: 3%;
+            padding: 20px;
+            background-color: rgba(233, 233, 226, 0.75);
+        }
+
+        td {
+            width: 150px;
+            height: 60px;
+            text-align: center;
+        }
+
+        input {
+            height: 25px;
+        }
+
+        select {
+            width: 200px;
+        }
+
+        input[type="number"] {
+            width: 75px;
+        }
+
+        button {
+            width: 120px;
+            height: 35px;
+        }
+
+        select {
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" method="post" name="order">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <strong>Order</strong>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2"><img width="150px"
+                        src="https://greendroprecycling.com/wp-content/uploads/2017/04/GreenDrop_Station_Aluminum_Can_Coke.jpg"
+                        alt="coca cola">
+                </td>
+                <td>
+                    <span>Coca Cola</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="count-input-id1">Count </label>
+                    <input name="product_id1" type="number" min="1" max="100" value="1" id="count-input-id1">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2"><img width="150px"
+                        src="https://greendroprecycling.com/wp-content/uploads/2017/04/GreenDrop_Station_Aluminum_Can_Pepsi.jpg"
+                        alt="pepsi">
+                </td>
+                <td>
+                    <span>Pepsi</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="count-input-id2">Count </label>
+                    <input name="product_id2" type="number" min="1" max="100" value="1" id="count-input-id2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+                </td>
+                <td>
+                    <input id="name" name="name" type="text" placeholder="Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Phone</label>
+                </td>
+                <td>
+                    <input id="phone" name="phone" type="tel" placeholder="Phone" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="delivery">Delivery type</label>
+                </td>
+                <td>
+                    <select id="delivery" name="delivery" id="delivery">
+                        <option selected disabled>Delivery</option>
+                        <option value="np">Nova Poshta</option>
+                        <option value="ukr">Ukrposhta</option>
+                        <option value="meest">Meest Express</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="call">Don`t call</label>
+                </td>
+                <td>
+                    <input id="call" type="checkbox" name="dont_call" checked>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Submit order</button>
+                </td>
+
+            </tr>
+        </table>
+
+
+</body>
+
+</html>
