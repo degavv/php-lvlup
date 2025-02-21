@@ -1,0 +1,27 @@
+.images{
+    text-align: center;
+}
+.images img{
+    height: 150px;
+}
+body{
+    height: 100vh;
+}
+
+main{
+    height: 85%;
+}
+
+footer{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+iframe{
+    text-align: center;
+}
+a{
+    color: #43b02a;
+}
