@@ -5,23 +5,17 @@
     height: 150px;
 }
 body{
-    height: 100vh;
+    height: 95vh;
 }
 
 main{
-    height: 85%;
+    height: 90%;
 }
 
 footer{
     text-align: center;
 }
 
-p{
-    text-align: justify;
-}
-iframe{
-    text-align: center;
-}
 a{
     color: #43b02a;
 }
