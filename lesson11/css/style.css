@@ -16,6 +16,7 @@ nav a {
     padding-left: 40px;
     color: #000000;
     text-decoration: underline #000000 dotted;
+    font-size: 18px;
 }
 
 .links-block {
@@ -24,7 +25,7 @@ nav a {
 
 header {
     margin: 0 auto;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #000000;
     height: 150px;
 }
 
@@ -32,8 +33,6 @@ header {
     background-image: url(../img/bg-mock.jpg);
     background-size: cover;
     height: 325px;
-    width: 650px;
-    margin: 0 auto;
 }
 
 .img-text-container {
