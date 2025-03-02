@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.absolute{
+    position: absolute;
+}
+
+.bus {
+    background-color: #f7e43b;
+    width: 850px;
+    height: 220px;
+    margin: calc(50vh - 75px) auto;
+    position: relative;
+    border-bottom: 1px solid #000000;
+}
+
+.windows-block {
+    background-color: #f7e43b;
+    border-width: 1px 0 7px;
+    border-color: #000000;
+    border-style: solid;
+    font-size: 0;
+}
+
+.bus-body {
+    position: absolute;
+    top: 20%;
+    height: 80%;
+    width: 80%;
+}
+
+.bus-body-left {
+    position: absolute;
+    border: 1px solid green;
+    height: 100%;
+    width: calc((900px*0.8)*0.82);
+}
+
+.windows-top-row div,
+.windows-bottom-row div {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #acaaaa;
+    width: 50px;
+    height: 25px;
+    margin: 4px 0 4px 5px;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.head {
+    width: 23%;
+    height: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.roof,
+.hood {
+    border-top-right-radius: 50px;
+    background-color: #f7e43b;
+    position: absolute;
+}
+
+.roof {
+    height: 100%;
+    width: 15%;
+}
+
+div.hood {
+    height: 10%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.wheel-left,
+.wheel-right,
+.wheel-left *,
+.wheel-right * {
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.wheel-left,
+.wheel-right {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    top: calc(100% - 50px);
+}
+
+.wheel-left {
+    left: 10%;
+}
+
+.wheel-right {
+    right: 2%;
+}
+
+.wheel-rim {
+    background-color: #acaaaa;
+    height: 60%;
+    width: 60%;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+}
+
+.wheel-rim-inner {
+    height: 80%;
+    width: 80%;
+    border: 2px solid #000000;
+    top: calc(50% - ((60px * 0.8)/2));
+    left: calc(50% - ((60px * 0.8)/2));
+}
+
+.text {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 5px;
+}
+
+.lines-block {
+    position: absolute;
+    width: 100%;
+}
+
+.lines-block>div {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-style: solid;
+    border-width: 1px 3px 3px 1px;
+    background-color: #fff9c5;
+}
+
+.second-line {
+    top: 12px;
+}
+
+.third-line {
+    top: 24px;
+}
+
+.back-square {
+    width: 40px;
+    height: 40px;
+    background-color: #acaaaa;
+    position: absolute;
+    border-radius: 4px;
+    bottom: -5px;
+    left: -20px;
+}
+
+/* Doors Block Start */
+.left-door,
+.right-door {
+    height: 100%;
+    width: 40px;
+    border: 1px solid red;
+    display: inline-block;
+    position: relative;
+}
+
+.doors-block {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    height: 100%;
+}
+
+
+.left-door>*,
+.right-door>* {
+    position: absolute;
+    width: 80%;
+    border: 1px solid #acaaaa;
+    left: 3px;
+}
+.door-top {
+    background-color: #ffffff;
+    height: 60px;
+    top: 7px;
+}
+.door-bottom{
+    top: 75px;
+    border: 1px solid #5b5b5b;
+    border-radius: 0 0 5px 5px;
+}
+.door-bottom-elem1{
+    background-color: #acaaaa;
+    height: 28px;
+}
+.door-bottom-elem2{
+    height: 18px;
+}
+/* Doors Block End */
