@@ -2,12 +2,29 @@
     padding: 0;
     margin: 0;
 }
-.absolute{
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.absolute {
     position: absolute;
 }
 
+.bg-color-yellow {
+    background-color: #fed708;
+}
+
+.bg-color-grey {
+    background-color: #a4a2b0;
+}
+
+.bg-color-lightyellow {
+    background-color: #fbfc3e;
+}
+
 .bus {
-    background-color: #f7e43b;
     width: 850px;
     height: 220px;
     margin: calc(50vh - 75px) auto;
@@ -15,26 +32,24 @@
     border-bottom: 1px solid #000000;
 }
 
-.windows-block {
-    background-color: #f7e43b;
-    border-width: 1px 0 7px;
-    border-color: #000000;
-    border-style: solid;
-    font-size: 0;
-}
-
+/* Bus Body Start */
 .bus-body {
-    position: absolute;
     top: 20%;
     height: 80%;
     width: 80%;
+    border-top: 1px solid #acaaaa;
 }
 
 .bus-body-left {
-    position: absolute;
-    border: 1px solid green;
     height: 100%;
-    width: calc((900px*0.8)*0.82);
+    width: calc((900px*0.8)*0.8);
+}
+
+.windows-block {
+    border-width: 0 0 7px;
+    border-color: #000000;
+    border-style: solid;
+    font-size: 0;
 }
 
 .windows-top-row div,
@@ -42,22 +57,51 @@
     display: inline-block;
     background-color: #ffffff;
     border: 1px solid #acaaaa;
-    width: 50px;
+    width: 48px;
     height: 25px;
     margin: 4px 0 4px 5px;
 }
 
-
-body {
-    width: 100%;
-    height: 100vh;
+.text {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 5px;
 }
 
+.lines-block {
+    width: 100%;
+}
+
+.lines-block>div {
+    width: 100%;
+    height: 5px;
+    border-style: solid;
+    border-width: 1px 3px 3px 1px;
+}
+
+.second-line {
+    top: 12px;
+}
+
+.third-line {
+    top: 24px;
+}
+
+.back-square {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    bottom: -5px;
+    left: -20px;
+}
+
+/* Bus Body End */
+
+/* Head Start */
 .head {
-    width: 23%;
-    height: 50%;
+    width: 20%;
+    height: 60%;
     background-color: #ffffff;
-    position: absolute;
     right: 0;
     top: 0;
 }
@@ -65,8 +109,6 @@ body {
 .roof,
 .hood {
     border-top-right-radius: 50px;
-    background-color: #f7e43b;
-    position: absolute;
 }
 
 .roof {
@@ -74,19 +116,90 @@ body {
     width: 15%;
 }
 
-div.hood {
-    height: 10%;
+.hood {
+    height: 30%;
     width: 100%;
-    bottom: 0;
+    bottom: 0px;
     right: 0;
 }
 
+.windshield {
+    top: 30px;
+    right: 0;
+    border-right: 20px solid #ffffff;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    height: 60px;
+}
+
+.windshield-elem {
+    height: 100%;
+    width: 2px;
+    border: 2px solid #f7e43b;
+    right: -15px;
+    top: -5px
+}
+
+.bumper {
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    right: -25px;
+}
+
+.bumper-front {
+    height: 100%;
+    width: 60%;
+    border-radius: 12px 12px;
+    border: 1px solid #8a8a8a;
+}
+
+.bumper-back {
+    height: 50%;
+    width: 5px;
+    border: 1px solid #8a8a8a;
+    top: 8px;
+    left: -5px;
+}
+
+.light {
+    height: 25px;
+    width: 10px;
+    border-left: 8px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    right: -10px;
+    top: 60%;
+}
+
+.light-fog {
+    height: 15px;
+    width: 10px;
+    border-left: 8px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    right: -10px;
+    top: 77%;
+}
+
+.flash-light {
+    height: 12px;
+    width: 20px;
+    border: 1px solid #e3e3e3;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    top: -12px;
+    right: 65%;
+}
+
+/* Head End */
+
+/* Wheels Block Start */
 .wheel-left,
 .wheel-right,
-.wheel-left *,
-.wheel-right * {
+.wheel-rim-inner,
+.wheel-rim {
     border-radius: 50%;
-    position: absolute;
     box-sizing: border-box;
 }
 
@@ -94,21 +207,11 @@ div.hood {
 .wheel-right {
     height: 100px;
     width: 100px;
-    border: 1px solid #000000;
-    background-color: #000000;
+    background-color: #322b33;
     top: calc(100% - 50px);
 }
 
-.wheel-left {
-    left: 10%;
-}
-
-.wheel-right {
-    right: 2%;
-}
-
 .wheel-rim {
-    background-color: #acaaaa;
     height: 60%;
     width: 60%;
     top: calc(50% - 30px);
@@ -123,84 +226,85 @@ div.hood {
     left: calc(50% - ((60px * 0.8)/2));
 }
 
-.text {
-    text-align: center;
-    font-size: 28px;
-    padding-top: 5px;
+.half-cirlce {
+    width: 120px;
+    height: 120px;
+    border-radius: 50% 50% 0 0;
+    background-color: #000000;
 }
 
-.lines-block {
-    position: absolute;
-    width: 100%;
+.half-cirlce-container {
+    width: 120px;
+    height: 60px;
+    overflow: hidden;
+    bottom: 0px;
+    left: -10px;
 }
 
-.lines-block>div {
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    border-style: solid;
-    border-width: 1px 3px 3px 1px;
-    background-color: #fff9c5;
+.wheel-left-container {
+    bottom: 0;
+    left: 50px;
 }
 
-.second-line {
-    top: 12px;
+.wheel-right-container {
+    bottom: 0;
+    right: 120px;
 }
 
-.third-line {
-    top: 24px;
-}
+/* Wheels Block End */
 
-.back-square {
-    width: 40px;
-    height: 40px;
-    background-color: #acaaaa;
-    position: absolute;
-    border-radius: 4px;
-    bottom: -5px;
-    left: -20px;
-}
 
 /* Doors Block Start */
+.doors-block {
+    top: 0;
+    right: 10px;
+    height: 100%;
+    background-color: #000000;
+    width: 90px;
+    text-align: center;
+}
+
 .left-door,
 .right-door {
-    height: 100%;
+    height: 97%;
     width: 40px;
-    border: 1px solid red;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
     display: inline-block;
     position: relative;
 }
 
-.doors-block {
-    position: absolute;
-    top: 0;
-    right: 30px;
-    height: 100%;
-}
-
-
 .left-door>*,
 .right-door>* {
-    position: absolute;
     width: 80%;
     border: 1px solid #acaaaa;
     left: 3px;
 }
+
 .door-top {
     background-color: #ffffff;
-    height: 60px;
+    height: 58px;
     top: 7px;
 }
-.door-bottom{
-    top: 75px;
+
+.door-bottom {
+    top: 72px;
     border: 1px solid #5b5b5b;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 8px 8px;
 }
-.door-bottom-elem1{
-    background-color: #acaaaa;
+
+.door-bottom-elem-first {
     height: 28px;
 }
-.door-bottom-elem2{
-    height: 18px;
+
+.door-bottom-elem {
+    height: 16px;
+    background-color: #46424b;
+    border-bottom: 1px solid;
 }
+
+.door-bottom-elem-last-child {
+    border-radius: inherit;
+}
+
 /* Doors Block End */

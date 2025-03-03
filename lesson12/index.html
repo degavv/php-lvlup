@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <div class="bus">
+    <div class="bus bg-color-yellow">
         <!-- Bus Body Start -->
-        <div class="bus-body">
-            <div class="bus-body-left">
-                <div class="windows-block">
+        <div class="bus-body absolute">
+            <div class="bus-body-left absolute">
+                <div class="windows-block bg-color-yellow">
                     <div class="windows-top-row">
                         <div></div>
                         <div></div>
@@ -42,35 +42,35 @@
                 <div class="text">
                     <span>SOUTH PARK ELEMENTARY R-1</span>
                 </div>
-                <div class="lines-block">
-                    <div class="first-line"></div>
-                    <div class="second-line"></div>
-                    <div class="third-line"></div>
+                <div class="lines-block absolute">
+                    <div class="first-line absolute bg-color-lightyellow"></div>
+                    <div class="second-line absolute bg-color-lightyellow"></div>
+                    <div class="third-line absolute bg-color-lightyellow"></div>
                 </div>
-                <div class="back-square"></div>
+                <div class="back-square absolute bg-color-grey"></div>
             </div>
- 
+
 
             <!-- Doors Start -->
-            <div class="doors-block">
-                <div class="left-door">
-                    <div class="door-top"></div>
-                    <div class="door-bottom">
-                        <div class="door-bottom-elem1"></div>
-                        <div class="door-bottom-elem2"></div>
-                        <div class="door-bottom-elem3"></div>
-                        <div class="door-bottom-elem4"></div>
-                        <div class="door-bottom-elem5"></div>
+            <div class="doors-block absolute">
+                <div class="left-door bg-color-yellow">
+                    <div class="door-top absolute"></div>
+                    <div class="door-bottom absolute">
+                        <div class="door-bottom-elem-first bg-color-grey"></div>
+                        <div class="door-bottom-elem"></div>
+                        <div class="door-bottom-elem"></div>
+                        <div class="door-bottom-elem"></div>
+                        <div class="door-bottom-elem door-bottom-elem-last-child"></div>
                     </div>
                 </div>
-                <div class="right-door">
-                    <div class="door-top"></div>
-                    <div class="door-bottom">
-                        <div class="door-bottom-elem1"></div>
-                        <div class="door-bottom-elem2"></div>
-                        <div class="door-bottom-elem3"></div>
-                        <div class="door-bottom-elem4"></div>
-                        <div class="door-bottom-elem5"></div>
+                <div class="right-door bg-color-yellow">
+                    <div class="door-top absolute"></div>
+                    <div class="door-bottom absolute">
+                        <div class="door-bottom-elem-first bg-color-grey"></div>
+                        <div class="door-bottom-elem"></div>
+                        <div class="door-bottom-elem"></div>
+                        <div class="door-bottom-elem"></div>
+                        <div class="door-bottom-elem door-bottom-elem-last-child"></div>
                     </div>
                 </div>
             </div>
@@ -80,21 +80,46 @@
         <!-- Bus Body End -->
 
         <!-- Wheels Start -->
-        <div class="wheel-left">
-            <div class="wheel-rim">
-                <div class="wheel-rim-inner"></div>
+        <div class="wheel-left-container absolute">
+            <div class="half-cirlce-container absolute">
+                <div class="half-cirlce"></div>
+            </div>
+            <div class="wheel-left absolute">
+                <div class="wheel-rim absolute bg-color-grey">
+                    <div class="wheel-rim-inner absolute"></div>
+                </div>
             </div>
         </div>
-        <div class="wheel-right">
-            <div class="wheel-rim">
-                <div class="wheel-rim-inner"></div>
+        <div class="wheel-right-container absolute">
+            <div class="half-cirlce-container absolute">
+                <div class="half-cirlce"></div>
+            </div>
+            <div class="wheel-right absolute">
+                <div class="wheel-rim absolute bg-color-grey">
+                    <div class="wheel-rim-inner absolute"></div>
+                </div>
             </div>
         </div>
         <!-- Wheels End -->
-        <div class="head">
-            <div class="roof"></div>
-            <div class="hood"></div>
+
+        <!-- Bus Head Start -->
+
+        <div class="head absolute">
+            <div class="roof absolute bg-color-yellow">
+                <div class="flash-light absolute bg-color-lightyellow"></div>
+                <div class="windshield absolute">
+                    <div class="windshield-elem absolute"></div>
+                </div>
+            </div>
+            <div class="hood absolute bg-color-yellow"></div>
         </div>
+        <div class="bumper absolute">
+            <div class="bumper-front bg-color-grey"></div>
+            <div class="bumper-back absolute bg-color-grey"></div>
+        </div>
+        <div class="light absolute bg-color-grey"></div>
+        <div class="light-fog absolute bg-color-grey"></div>
+        <!-- Bus Head End -->
     </div>
 </body>
 
