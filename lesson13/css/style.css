@@ -11,10 +11,13 @@
     float: right;
 }
 
-body {
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgb(23, 29, 43);
+.border {
+    border-top-width: 6px;
+    border-top-style: solid;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .bg {
@@ -28,15 +31,29 @@ body {
 .wrapper {
     max-width: 1200px;
     margin: 0px auto;
-    padding: 60px 0;
+    padding-top: 60px;
 }
 
-main {
-    min-height: 200vh;
-}
-
-footer {
+.transparent-bar {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(122, 147, 206, 0.6);
+    bottom: 5px;
     color: #ffffff;
+    font-size: 14px;
+}
+
+.transparent-bar span {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(23, 29, 43);
 }
 
 /* Side Bar Start */
@@ -45,8 +62,9 @@ aside {
 }
 
 aside>* {
-    background-color: antiquewhite;
     margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
 }
 
 .home,
@@ -56,27 +74,44 @@ aside>* {
     height: 145px;
 }
 
+aside a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
 .about,
 .contact {
     width: 145px;
 }
 
+.home {
+    background-image: linear-gradient(rgba(104, 116, 144, 0.5), rgba(104, 116, 144, 0.5)), url(../img/side_h_1.jpg);
+}
+
 .gallery {
     height: 300px;
     clear: both;
+    background-image: linear-gradient(rgba(104, 116, 144, 0.5), rgba(104, 116, 144, 0.5)), url(../img/side_sq_big.avif);
+
 }
 
 .about {
     margin-right: 10px;
+    background-color: rgba(112, 25, 33, 0.49);
 }
 
 .contact {
-    background-color: aquamarine;
+    background-color: rgba(1, 230, 1, 0.49);
+}
+
+.lorem {
+    background-image: linear-gradient(rgba(104, 116, 144, 0.5), rgba(104, 116, 144, 0.5)), url(../img/side_h_2.avif);
 }
 
 /* Side Bar End */
 
-/* Main Start */
+/* Main Block Start */
 .main-block {
     width: 850px;
     min-height: 100vh;
@@ -88,18 +123,149 @@ aside>* {
     width: 100%;
 }
 
-.horizontal {
-    background-color: antiquewhite;
+.vertical-block>*,
+.main-block>.horizontal {
+    background-color: #ffffff;
+}
+
+/* Horizontal Blocks Start */
+
+
+/* Top horizontal Start */
+.horizontal-top {
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url(../img/h_large.jpg);
+    background-size: cover;
+    background-position: right;
+    border-color: #46aad5;
+}
+
+.horizontal-top .content-container {
+    padding: 60px 40px;
+}
+
+.horizontal-top .content-container__title {
+    border-color: #46aad5;
+}
+
+.horizontal-top .content-container>* {
+    margin-bottom: 50px;
+}
+
+.horizontal-top .content-container span {
+    color: #46aad5;
+    font-weight: 600;
+}
+
+.horizontal-top p {
+    display: inline-block;
+    width: 50%;
+    line-height: 22px;
+}
+
+.horizontal-top button {
+    padding: 8px 14px;
+    background-color: darkslategrey;
+    font-weight: 600;
+    color: #ffffff;
+    display: block;
+}
+
+/* Top horizontal End */
+
+/* Bottom horizontal Start */
+
+.horizontal-bottom {
+    border-color: #66aa54;
+}
+
+.horizontal-bottom .content-container__title {
+    border-color: #66aa54;
+}
+
+/* Bottom horizontal End */
+.content-container {
+    padding: 30px;
+    height: 100%;
+}
+
+.content-container__title {
+    border-left-width: 3px;
+    border-left-style: solid;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.content-container__img-block {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content-container__img_item {
+    display: inline-block;
+    position: relative;
+}
+
+
+/* Horizontal Blocks End */
+
+/* Vertical Blocks Start */
+.main-block .vertical-block .left {
+    border-color: #add8e6;
+}
+
+.main-block .vertical-block .left .content-container__title {
+    border-color: #add8e6;
+}
+
+.main-block .vertical-block .right {
+    border-color: #d0bd43;
+}
+
+.main-block .vertical-block .right .content-container__title {
+    border-color: #d0bd43;
 }
 
 div.vertical {
     width: calc(50% - 10px);
     height: 100%;
-    background-color: aquamarine;
 }
 
 .vertical-block {
     clear: both;
 }
 
-/* Main End */
+.main-block .vertical .content-container>* {
+    margin-bottom: 30px;
+}
+
+.image-container {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left>.image-container {
+    background-image: url(../img/v1.jpg);
+
+}
+
+.right>.image-container {
+    background-image: url(../img/v2.jpg);
+
+}
+
+
+/* Vertical Blocks End */
+
+/* Main Block End */
+
+/* Footer Start */
+
+footer {
+    color: #ffffff;
+    clear: both;
+    padding-bottom: 20px;
+}
+
+/* Footer End */
