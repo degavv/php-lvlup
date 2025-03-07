@@ -168,6 +168,7 @@ aside a {
     font-weight: 600;
     color: #ffffff;
     display: block;
+    cursor: pointer;
 }
 
 /* Top horizontal End */
