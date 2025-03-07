@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bdr-rad {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.bg-red_color-white {
+    background-color: #d73c2f;
+    color: #ffffff;
+}
+
+body {
+    background-image: url(../img/cat-girl.webp);
+    background-size: 100% auto;
+    background-position: top -100px right 0;
+    background-repeat: no-repeat;
+    min-width: 1700px;
+    max-width: 2400px;
+    min-height: 100vh;
+}
+
+.main-wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+main {
+    height: 100%;
+}
+
+/* Header Start */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #ffffff;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    font-size: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+nav ul li a {
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    background-color: #d73c2f;
+    color: #ffffff;
+}
+
+/* Header End */
+
+/* Block Title Start*/
+
+.block-title h1 {
+    font-size: 58px;
+    padding: 20px 0;
+}
+
+.block-title p {
+    font-size: 20px;
+}
+
+.block-store {
+    display: flex;
+    padding: 30px 0 260px;
+}
+
+.block-store>div {
+    margin-right: 20px;
+}
+
+/* Block Title End*/
+
+/* Block Cards Start */
+.block-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 380px;
+    height: 500px;
+    background-position: top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: flex;
+    align-items: end;
+    color: #ffffff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transition: 0.4s;
+    background-size: 110% auto;
+}
+
+.card-info {
+    padding: 0 0 30px 30px;
+    font-size: 1.1rem;
+}
+
+.card-info .game-name {
+    font-weight: 600;
+}
+
+.card-1 {
+    background-image: linear-gradient(to top, rgba(231, 80, 80, 0.8), rgba(211, 115, 115, 0)), url(../img/fisrt.webp);
+}
+
+.card-1:hover {
+    background-image: url(../img/fisrt.webp);
+
+}
+
+.card-2 {
+    background-image: linear-gradient(to top, rgba(231, 80, 80, 0.8), rgba(211, 115, 115, 0)), url(../img/sec.webp);
+}
+
+.card-2:hover {
+    background-image: url(../img/sec.webp);
+}
+
+.card-3 {
+    background-image: linear-gradient(to top, rgba(231, 80, 80, 0.8), rgba(211, 115, 115, 0)), url(../img/third.webp);
+}
+
+.card-3:hover {
+    background-image: url(../img/third.webp);
+}
+
+.card-4 {
+    background-image: linear-gradient(to top, rgba(231, 80, 80, 0.8), rgba(211, 115, 115, 0)), linear-gradient(#fcfd71, #fcfd71);
+    font-size: 34px;
+    font-weight: 600;
+    color: #652c3b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-4:hover {
+    font-size: 38px;
+    background-image: linear-gradient(#fcfd71, #fcfd71);
+}
+
+/* Block Cards End */
