@@ -9,8 +9,9 @@
 }
 body{
     justify-content: center;
+    min-height: 100vh;
 }
-.main-wrapper{
+.page-wrapper{
     flex-direction: column;
     flex-basis: 80%;
 }
@@ -43,4 +44,8 @@ nav ul li{
 nav ul li a{
     
     /* color: #ffffff; */
+}
+main{
+    padding: 30px 20px;
+    flex-grow: 1;
 }
