@@ -55,9 +55,8 @@ header p {
     background-position: top;
     background-repeat: no-repeat;
 }
-
-nav {
-    width: 105%;
+.nav-wrapper{
+    width: calc(100% + 54px);
     background-image: linear-gradient(#222512, #717f42);
     box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.7);
     position: relative;
@@ -96,6 +95,7 @@ main .title {
     border-bottom: 27px solid transparent;
     position: absolute;
     bottom: -37px;
+    z-index: -1;
 }
 
 .border-right {
