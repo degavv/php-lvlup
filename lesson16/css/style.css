@@ -1,0 +1,107 @@
+:root {
+    --light-blue: #add8e6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.page-wrapper {
+    padding: 60px 0;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+main {
+    position: relative;
+    background-color: var(--light-blue);
+    min-height: 500px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main h1 {
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+nav ul li a {
+    color: #000000;
+}
+
+.text-section {
+    padding: 40px 40px;
+    position: absolute;
+    left: 100vw;
+    transition-duration: 1000ms;
+    transition-delay: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    transition-delay: 150ms;
+    transition-duration: 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Active Menu Item */
+input[type="radio"]:checked+label {
+    color: #000000;
+    background-color: var(--light-blue);
+}
+
+/* Inactive Menu Item */
+input[type="radio"]:not(:checked)+label {
+    color: #5c5c5c;
+    background-color: #dedddd;
+}
+
+/* Inactive Menu Item Hover*/
+input[type="radio"]:not(:checked):hover+label {
+    cursor: pointer;
+    color: #ffa500;
+}
+
+/* Text Block Animation */
+.page-wrapper:has(nav input[id="home"]:checked) main>.section-home {
+    transition-delay: 250ms;
+    left: 0;
+}
+
+.page-wrapper:has(nav input[id="about"]:checked) main>.section-about {
+    transition-delay: 250ms;
+    left: 0;
+}
+
+.page-wrapper:has(nav input[id="contacts"]:checked) main>.section-contacts {
+    left: 0;
+    transition-delay: 250ms;
+}
