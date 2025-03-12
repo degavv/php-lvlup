@@ -27,7 +27,7 @@ body {
 main {
     position: relative;
     background-color: var(--light-blue);
-    min-height: 500px;
+    min-height: 700px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -76,6 +76,7 @@ label {
 input[type="radio"]:checked+label {
     color: #000000;
     background-color: var(--light-blue);
+    transition-duration: 1000ms;
 }
 
 /* Inactive Menu Item */
