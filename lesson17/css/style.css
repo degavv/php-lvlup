@@ -1,8 +1,14 @@
-*{
+:root {
+    --animation-duration: 20000ms;
+}
+
+* {
     margin: 0;
     padding: 0;
+    animation-duration: var(--animation-duration);
 }
-.page{
+
+.page {
     width: 1920px;
     height: 1080px;
     background-image: url(../img/south-park-elementary-calendar-carri-cristin.png);
@@ -10,14 +16,85 @@
     overflow: hidden;
     position: relative;
 }
-.bus{
+
+.bus {
     position: absolute;
-    left: 0px;
+    left: -100vw;
     bottom: 0px;
+    animation-duration: var(--animation-duration);
+    animation-name: bus;
+    animation-iteration-count: infinite;
 }
-.bus>img{
+
+.bus>img {
     width: 1000px;
 }
-@keyframes{
 
+.kenny-front {
+    animation-duration: var(--animation-duration);
+    /* animation-delay: 6s; */
+    animation-name: out_of_the_bus;
+    animation-iteration-count: infinite;
+    bottom: -10px;
+    left: 860px;
+    /* border: 1px solid red; */
+    position: absolute;
+    opacity: 0;
 }
+
+.kenny-front>img {
+    width: 45%;
+}
+
+@keyframes bus {
+    0% {
+        left: -100vw;
+    }
+
+    30% {
+        left: -100vw;
+    }
+
+    40% {
+        left: 150px;
+    }
+
+    70% {
+        left: 150px;
+    }
+
+    80% {
+        left: 100vw;
+    }
+
+    100% {
+        left: 100vw;
+    }
+}
+
+@keyframes out_of_the_bus {
+    0% {
+        opacity: 0;
+        /* visibility: visible; */
+    }
+    39%{
+        opacity: 0;
+
+    }
+    40% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    46% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        /* visibility: visible; */
+    }
+}
+
+@keyframes walking_right {}
