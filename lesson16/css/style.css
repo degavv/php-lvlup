@@ -45,8 +45,6 @@ nav ul li a {
     padding: 40px 40px;
     position: absolute;
     left: 100vw;
-    transition-duration: 1000ms;
-    transition-delay: 0;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
@@ -92,17 +90,26 @@ input[type="radio"]:not(:checked):hover+label {
 }
 
 /* Text Block Animation */
-.page-wrapper:has(nav input[id="home"]:checked) main>.section-home {
-    transition-delay: 250ms;
-    left: 0;
-}
-
-.page-wrapper:has(nav input[id="about"]:checked) main>.section-about {
-    transition-delay: 250ms;
-    left: 0;
-}
-
+.page-wrapper:has(nav input[id="home"]:checked) main>.section-home,
+.page-wrapper:has(nav input[id="about"]:checked) main>.section-about,
 .page-wrapper:has(nav input[id="contacts"]:checked) main>.section-contacts {
     left: 0;
-    transition-delay: 250ms;
+    transition-property: left;
+    transition-duration: 500ms;
+    opacity: 1;
+}
+
+.page-wrapper:has(nav input[id="home"]:not(:checked)) main>.section-home,
+.page-wrapper:has(nav input[id="about"]:not(:checked)) main>.section-about,
+.page-wrapper:has(nav input[id="contacts"]:not(:checked)) main>.section-contacts {
+    left: -100vw;
+    transition-property: left, opacity;
+    transition-duration: 500ms;
+    opacity: 0;
+}
+
+.page-wrapper:has(nav input[id="home"]:not(:checked):hover) main>.section-home,
+.page-wrapper:has(nav input[id="about"]:not(:checked):hover) main>.section-about,
+.page-wrapper:has(nav input[id="contacts"]:not(:checked):hover) main>.section-contacts {
+    left: 100vw;
 }
