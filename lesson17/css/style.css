@@ -1,5 +1,7 @@
 :root {
     --animation-duration: 20000ms;
+    --horizont-height: 0px;
+    --sidewalk-height: 80px;
 }
 
 * {
@@ -20,7 +22,7 @@
 .bus {
     position: absolute;
     left: -100vw;
-    bottom: 0px;
+    bottom: var(--horizont-height);
     animation-duration: var(--animation-duration);
     animation-name: bus;
     animation-iteration-count: infinite;
@@ -32,18 +34,41 @@
 
 .kenny-front {
     animation-duration: var(--animation-duration);
-    /* animation-delay: 6s; */
     animation-name: out_of_the_bus;
     animation-iteration-count: infinite;
-    bottom: -10px;
-    left: 860px;
-    /* border: 1px solid red; */
+
+}
+
+.kenny-right {
+    animation-duration: var(--animation-duration);
+    animation-name: walking_right;
+    animation-iteration-count: infinite;
+}
+
+.kenny>img {
+    width: 100%;
+    height: auto;
+}
+
+.kenny {
+    height: 140px;
+    width: 110px;
     position: absolute;
     opacity: 0;
 }
 
-.kenny-front>img {
-    width: 45%;
+.kenny-back {
+    animation: jump 20s infinite;
+}
+
+.kenny-left {
+    animation-duration: var(--animation-duration);
+    animation-name: walking_left;
+    animation-iteration-count: infinite;
+}
+
+.enter-school {
+    animation: enter_the_school var(--animation-duration) infinite;
 }
 
 @keyframes bus {
@@ -51,19 +76,19 @@
         left: -100vw;
     }
 
-    30% {
+    10% {
         left: -100vw;
     }
 
-    40% {
+    30% {
         left: 150px;
     }
 
-    70% {
+    49% {
         left: 150px;
     }
 
-    80% {
+    60% {
         left: 100vw;
     }
 
@@ -72,29 +97,216 @@
     }
 }
 
+/* Start at 32 */
 @keyframes out_of_the_bus {
     0% {
         opacity: 0;
-        /* visibility: visible; */
     }
-    39%{
+
+    31% {
         opacity: 0;
 
     }
+
+    32% {
+        opacity: 1;
+        bottom: var(--horizont-height);
+        left: 880px;
+    }
+
     40% {
         opacity: 1;
+        bottom: var(--horizont-height);
+        left: 880px;
     }
-    45% {
-        opacity: 1;
-    }
-    46% {
+
+    41% {
         opacity: 0;
     }
 
     100% {
         opacity: 0;
-        /* visibility: visible; */
     }
 }
 
-@keyframes walking_right {}
+/* Start at 41 */
+@keyframes walking_right {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    /* walking right */
+    41% {
+        opacity: 1;
+        bottom: var(--horizont-height);
+        left: 880px;
+    }
+
+    /* crash */
+    50% {
+        transform: rotateZ(0deg) scale(1);
+        bottom: var(--horizont-height);
+        left: 1180px;
+    }
+
+    52% {
+        bottom: 100px;
+    }
+
+    53% {
+        transform: rotateZ(90deg) scale(1);
+        bottom: var(--horizont-height);
+        left: 1300px;
+    }
+
+    55% {
+        transform: rotateZ(180deg) scale(1);
+        bottom: 150px;
+        left: 1400px;
+    }
+
+    /* lie */
+    56% {
+        transform: rotateZ(280deg) scale(1);
+        bottom: var(--horizont-height);
+        left: 1650px;
+        opacity: 1;
+    }
+
+    /* lie */
+    60% {
+        transform: rotateZ(280deg) scale(1);
+        left: 1650px;
+        opacity: 1;
+    }
+
+    /* Stand up */
+    68% {
+        transform: rotateZ(360deg) scale(1);
+        left: 1700px;
+        opacity: 1;
+    }
+
+    70% {
+        transform: rotateZ(360deg) scale(1);
+        bottom: var(--horizont-height);
+        left: 1700px;
+        opacity: 1;
+    }
+
+    71% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Start at 71 */
+@keyframes jump {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    71% {
+        opacity: 1;
+        bottom: calc(var(--horizont-height) + 10px);
+        left: 1725px;
+    }
+
+    73% {
+        bottom: 120px;
+    }
+
+    74% {
+        bottom: var(--sidewalk-height);
+        opacity: 1;
+        left: 1725px;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
+/* Start at 75 */
+@keyframes walking_left {
+    0% {
+        opacity: 0;
+    }
+
+    74% {
+        opacity: 0;
+    }
+
+    75% {
+        left: 1725px;
+        bottom: var(--sidewalk-height);
+
+        opacity: 1;
+    }
+
+    87% {
+        left: 995px;
+        bottom: var(--sidewalk-height);
+        opacity: 1;
+    }
+
+    88% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Start at 88 */
+@keyframes enter_the_school {
+    0% {
+        opacity: 0;
+    }
+
+    87% {
+        opacity: 0;
+    }
+
+    88% {
+        opacity: 1;
+        left: 995px;
+        bottom: var(--sidewalk-height);
+        height: 140px;
+        width: 110px;
+    }
+
+    98% {
+        opacity: 1;
+        left: 880px;
+        bottom: 250px;
+        height: calc(140px * 0.75);
+        width: calc(110px * 0.75);
+    }
+
+    100% {
+        opacity: 0;
+        left: 880px;
+        bottom: 250px;
+        height: calc(140px * 0.75);
+        width: calc(110px * 0.75);
+    }
+}
