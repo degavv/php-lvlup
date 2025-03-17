@@ -5,57 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <header>
+    <div class="page-wrapper flex">
+        <header class="flex">
             <div class="logo">
-                <img src="" alt="slack-logo">
-                <span>slack</span>
+                <img src="img/logo-slack.png" alt="slack-logo">
             </div>
             <nav>
-                <ul>
-                    <li>why slack?</li>
-                    <li>pricing</li>
-                    <li>about us</li>
-                    <li>find your team</li>
-                    <li>sign in</li>
-                    <li>create team</li>
+                <ul class="flex">
+                    <li><a href="#">Why Slack?</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find Your Team</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Create Team</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <div class="main-img"></div>
-            <div class="main-content">
-                <h1>where work happens</h1>
+        <main class="flex">
+            <div class="main-img">
+                <img src="img/main-img.jpg" alt="work process">
+            </div>
+            <div class="main-content flex">
+                <h1>Where Work Happens</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus maiores laboriosam eaque
                     voluptatem nisi reiciendis odio id officia quo? Blanditiis, officiis voluptates molestias labore
                     aperiam tenetur dolore modi quaerat. Recusandae, nam veritatis impedit quae quia totam suscipit sunt
                     dicta rem.</p>
                 <form action="" method="post" name="registration">
-                    <input type="email" name="email" required placeholder="Email address" class="input-text">
-                    <button type="submit" class="button">get started</button>
-                    <div class="sign-in">
-                        already using Slack? <a href="#">Sign in</a>
-                    </div>
+                    <input type="email" name="email" required placeholder="Email address" class="input-text border">
+                    <button type="submit" class="border">get started</button>
                 </form>
+                <div class="sign-in">
+                    Already using Slack? <a href="#">Sign in.</a>
+                </div>
             </div>
         </main>
-        <footer>
-            <div class="footer-title">
-                <h2>you're in good company</h2>
+        <footer class="flex">
+            <div class="footer-title flex">
+                <h2>You're in good company</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro natus doloribus officiis dolor
                     qui incidunt temporibus molestiae pariatur earum.</p>
-                <a href="#" class="button">discover why</a>
-                <div class="footer-cards">
+                <a href="#" class="border">discover why</a>
+            </div>
+            <div class="footer-cards">
+                <div class="cards-row flex">
                     <div class="footer-card"><img src="img/logo-box@2x.png" alt=""></div>
                     <div class="footer-card"><img src="img/logo-capital-one@2x.png" alt=""></div>
                     <div class="footer-card"><img src="img/logo-ibm@2x.png" alt=""></div>
+                </div>
+                <div class="cards-row flex">
                     <div class="footer-card"><img src="img/logo-openai@2x.png" alt=""></div>
-                    <div class="footer-card"><img src="img/logo-rivian@2x.png" alt=""></div>
+                    <div class="footer-card"><img src="img/oracle.png" alt=""></div>
                     <div class="footer-card"><img src="img/spotify-ad-logo@2x.png" alt=""></div>
                 </div>
+
             </div>
         </footer>
     </div>
