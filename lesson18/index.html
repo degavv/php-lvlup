@@ -4,30 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Slack</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="page-wrapper flex">
+        <!-- Header Block Start -->
         <header class="flex">
             <div class="logo">
                 <img src="img/logo-slack.png" alt="slack-logo">
             </div>
             <nav>
                 <ul class="flex">
-                    <li><a href="#">Why Slack?</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Find Your Team</a></li>
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Create Team</a></li>
+                    <li class="border"><a href="#">Why Slack?</a></li>
+                    <li class="border"><a href="#">Pricing</a></li>
+                    <li class="border"><a href="#">About Us</a></li>
+                    <li class="border"><a href="#">Find Your Team</a></li>
+                    <li class="border"><a href="#">Sign In</a></li>
+                    <li class="border"><a href="#">Create Team</a></li>
                 </ul>
             </nav>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </header>
+        <!-- Header Block End -->
+
+        <!-- Main Block Start -->
         <main class="flex">
             <div class="main-img">
-                <img src="img/main-img.jpg" alt="work process">
             </div>
             <div class="main-content flex">
                 <h1>Where Work Happens</h1>
@@ -37,13 +45,19 @@
                     dicta rem.</p>
                 <form action="" method="post" name="registration">
                     <input type="email" name="email" required placeholder="Email address" class="input-text border">
-                    <button type="submit" class="border">get started</button>
+                    <button type="submit" class="border reg-button">get started</button>
                 </form>
+                <!-- visible when form is hidden at 1024px & 640px  -->
+                <a href="#" class="border reg-button">get started</a>
+
                 <div class="sign-in">
                     Already using Slack? <a href="#">Sign in.</a>
                 </div>
             </div>
         </main>
+        <!-- Main Block End -->
+        <!-- Footer Block Start -->
+
         <footer class="flex">
             <div class="footer-title flex">
                 <h2>You're in good company</h2>
@@ -52,19 +66,27 @@
                 <a href="#" class="border">discover why</a>
             </div>
             <div class="footer-cards">
-                <div class="cards-row flex">
-                    <div class="footer-card"><img src="img/logo-box@2x.png" alt=""></div>
-                    <div class="footer-card"><img src="img/logo-capital-one@2x.png" alt=""></div>
-                    <div class="footer-card"><img src="img/logo-ibm@2x.png" alt=""></div>
+                <div class="footer-card">
+                    <a href="#"><img src="img/logo-capital-one@2x.png" alt="logo-capital-one"></a>
                 </div>
-                <div class="cards-row flex">
-                    <div class="footer-card"><img src="img/logo-openai@2x.png" alt=""></div>
-                    <div class="footer-card"><img src="img/oracle.png" alt=""></div>
-                    <div class="footer-card"><img src="img/spotify-ad-logo@2x.png" alt=""></div>
+                <div class="footer-card">
+                    <a href="#"><img src="img/logo-ibm@2x.png" alt="logo-ibm"></a>
                 </div>
-
+                <div class="footer-card">
+                    <a href="#"><img src="img/logo-openai@2x.png" alt="logo-openai"></a>
+                </div>
+                <div class="footer-card">
+                    <a href="#"><img src="img/air.png" alt="logo-air"></a>
+                </div>
+                <div class="footer-card">
+                    <a href="#"><img src="img/logo-box@2x.png" alt="logo-box"></a>
+                </div>
+                <div class="footer-card">
+                    <a href="#"><img src="img/spotify-ad-logo@2x.png" alt="spotify-ad-logo"></a>
+                </div>
             </div>
         </footer>
+        <!-- Footer Block End -->
     </div>
 
 </body>
